@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
 
 ## Data
 
-Two data collection methods are described in detail below. Hoewver, if you want to skip straight to the data, run the following code:
+Our data collection method is described in detail below. Hoewver, if you want to get straight to the data, simply run the following code:
 
 ```{r, eval=FALSE}
 ## download status IDs file
@@ -43,46 +43,13 @@ if (!requireNamespace("rtweet", quietly = TRUE)) {
 library(rtweet)
 ```
 
-## Twitter APIs
-
-There are two easy [and free] ways to get lots of Twitter data, filtering by one or more keywords. Each method is described and demonstrated below.
-
-### Stream
-
-The first way is to stream the data (using Twitter's stream API). For example, in the code below, a stream is setup to run continuously from the moment its executed until the Saturday at midnight (to roughly coincide with the end of the conference).
-
-```{r, eval=FALSE}
-## set stream time
-timeout <- as.numeric(
-  difftime(as.POSIXct("2018-03-13 00:00:00"),
-  Sys.time(), tz = "America/Chicago", "secs")
-)
-
-## search terms
-nicar18conf <- c("NICAR18", "RE_NICAR")
-
-## name of file to save output
-json_file <- file.path("data", "stream.json")
-
-## stream the tweets and write to "data/stream.json"
-stream_tweets(
-  q = paste(nicar18conf, collapse = ","),
-  timeout = timeout,
-  file_name = json_file,
-  parse = FALSE
-)
-
-## parse json data and convert to tibble
-rt <- parse_stream(json_file)
-```
-
 ### Search
 
-The second easy way to gather Twitter data using one or more keywords is to search for the data (using Twitter's REST API). Unlike streaming, searching makes it possible to go back in time. Unfortunately, Twitter sets a rather restrictive cap–roughly nine days–on how far back you can go. Regardless, searching for tweets is often the preferred method. For example, the code below is setup in such a way that it can be executed once [or even several times] a day throughout the conference.
+One of the easiest ways to gather Twitter data is to search for the data (using Twitter's REST API). Unlike streaming, searching makes it possible to go back in time. Unfortunately, Twitter sets a rather restrictive cap–roughly nine days–on how far back you can go. Regardless, searching for tweets is often the preferred method. For example, the code below is setup in such a way that it can be executed once [or even several times] a day throughout the conference.
 
 ```{r}
 ## search terms
-nicar18conf <- c("NICAR18", "RE_NICAR")
+nicar18conf <- c("NICAR18", "NICAR2018", "IRE_NICAR")
 
 ## use since_id from previous search (if exists)
 if (file.exists(file.path("data", "search.rds"))) {
@@ -133,26 +100,37 @@ saveRDS(rt[, "status_id"], file.path("data", "search-ids.rds"))
 To explore the Twitter data, we recommend using the [tidyverse](http://tidyverse.org) packages.
 
 ```{r}
+## load tidyverse
 suppressPackageStartupMessages(library(tidyverse))
+
+## set ggplot2 theme
+theme_set(
+  theme_minimal(base_size = 15, base_family = "Roboto Condensed") +
+  theme(
+    legend.position = "none",
+    plot.background = element_rect(colour = "#f7f7f7", fill = "#f7f7f7"),
+    panel.background = element_rect(fill = "#f7f7f7", colour = "#f7f7f7"),
+    panel.grid.major = element_line(colour = "#cccccc"),
+    panel.grid.minor = element_line(colour = "#cccccc"),
+    axis.text = element_text(colour = "#222222"),
+    plot.title = element_text(size = rel(1.7), face = "bold"),
+    plot.subtitle = element_text(size = rel(1.3)),
+    plot.caption = element_text(colour = "#444444"))
+)
 ```
 
 ### Tweet frequency over time
 
 In the code below, the data are summarized into a time series-like data frame and then plotted in order depict the frequency of tweets–aggregated in two-hour intevals–about nicar18 over time.
 
-```{r timefreq, include=FALSE}
+```{r timefreq}
 p <- rt %>%
   filter(created_at > "2018-01-29") %>%
   ts_plot("2 hours", color = "transparent") +
   geom_smooth(method = "loess", se = FALSE, span = .1,
-  size = 2, colour = "#0066aa") +
-  geom_point(size = 5,
+  size = 1.75, colour = "#0066aa") +
+  geom_point(size = 4.5,
     shape = 21, fill = "#ADFF2F99", colour = "#000000dd") +
-  theme_minimal(base_size = 15, base_family = "Roboto Condensed") +
-  theme(axis.text = element_text(colour = "#222222"),
-    plot.title = element_text(size = rel(1.7), face = "bold"),
-    plot.subtitle = element_text(size = rel(1.3)),
-    plot.caption = element_text(colour = "#444444")) +
   labs(title = "Frequency of #NICAR18 tweets over time",
     subtitle = "Twitter status counts aggregated in two-hour intervals",
     caption = "\n\nSource: Data gathered via Twitter's standard `search/tweets` API using rtweet",
@@ -169,7 +147,7 @@ ggsave("img/timefreq.png", p, width = 9, height = 7, units = "in")
 
 Next, some sentiment analysis of the tweets so far.
 
-```{r sentiment, fig.show=FALSE, include=FALSE}
+```{r sentiment}
 ## clean up the text a bit (rm mentions and links)
 rt$text2 <- gsub(
   "^RT:?\\s{0,}|#|@\\S+|https?[[:graph:]]+", "", rt$text)
@@ -198,12 +176,6 @@ p <- rt %>%
     colour = "#aa11aadd", fill = "#bbbbbb11") +
   geom_point(aes(fill = valence, colour = valence), 
     shape = 21, alpha = .6, size = 3.5) +
-  theme_minimal(base_size = 15, base_family = "Roboto Condensed") +
-  theme(legend.position = "none",
-    axis.text = element_text(colour = "#222222"),
-    plot.title = element_text(size = rel(1.7), face = "bold"),
-    plot.subtitle = element_text(size = rel(1.3)),
-    plot.caption = element_text(colour = "#444444")) +
   scale_fill_manual(
     values = c(Positive = "#2244ee", Negative = "#dd2222")) +
   scale_colour_manual(
@@ -224,7 +196,7 @@ ggsave("img/sentiment.png", p, width = 9, height = 7, units = "in")
 
 The code below provides a quick and dirty visualization of the semantic network (connections via retweet, quote, mention, or reply) found in the data.
 
-```{r network, fig.show=FALSE, include=FALSE}
+```{r network}
 ## unlist observations into long-form data frame
 unlist_df <- function(...) {
   dots <- lapply(list(...), unlist)
@@ -312,5 +284,15 @@ nodes$rank <- seq_len(nrow(nodes))
 nodes$screen_name <- paste0(
   '<a href="https://twitter.com/', nodes$screen_name, 
   '">@', nodes$screen_name, '</a>')
+nodes$n <- round(nodes$n, 3)
 dplyr::select(nodes, rank, screen_name, log_n = n)
 ```
+
+<style>
+table {
+  display: table;
+  width: unset;
+  margin: 0 auto;
+  min-width: 50%;
+}
+</style>
