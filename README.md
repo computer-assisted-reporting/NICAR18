@@ -151,28 +151,6 @@ In the code below, the data are summarized into a time series-like data
 frame and then plotted in order depict the frequency of
 tweets–aggregated in two-hour intevals–about nicar18 over time.
 
-``` r
-rt %>%
-  filter(created_at > "2018-01-29") %>%
-  ts_plot("2 hours", color = "transparent") +
-  geom_smooth(method = "loess", se = FALSE, span = .1,
-  size = 2, colour = "#0066aa") +
-  geom_point(size = 5,
-    shape = 21, fill = "#ADFF2F99", colour = "#000000dd") +
-  theme_minimal(base_size = 15, base_family = "Roboto Condensed") +
-  theme(axis.text = element_text(colour = "#222222"),
-    plot.title = element_text(size = rel(1.7), face = "bold"),
-    plot.subtitle = element_text(size = rel(1.3)),
-    plot.caption = element_text(colour = "#444444")) +
-  labs(title = "Frequency of #NICAR18 tweets over time",
-    subtitle = "Twitter status counts aggregated in two-hour intervals",
-    caption = "\n\nSource: Data gathered via Twitter's standard `search/tweets` API using rtweet",
-    x = NULL, y = NULL) + 
-  ggsave("img/timefreq.png", width = 9, height = 7, units = "in")
-```
-
-![](README_files/figure-gfm/timefreq-1.png)<!-- -->
-
 <p align="center">
 
 <img width="100%" height="auto" src="img/timefreq.png" />
@@ -184,54 +162,6 @@ rt %>%
 ### Positive/negative sentiment
 
 Next, some sentiment analysis of the tweets so far.
-
-``` r
-## clean up the text a bit (rm mentions and links)
-rt$text2 <- gsub(
-  "^RT:?\\s{0,}|#|@\\S+|https?[[:graph:]]+", "", rt$text)
-## convert to lower case
-rt$text2 <- tolower(rt$text2)
-## trim extra white space
-rt$text2 <- gsub("^\\s{1,}|\\s{1,}$", "", rt$text2)
-rt$text2 <- gsub("\\s{2,}", " ", rt$text2)
-
-## estimate pos/neg sentiment for each tweet
-rt$sentiment <- syuzhet::get_sentiment(rt$text2, "syuzhet")
-
-## write function to round time into rounded var
-round_time <- function(x, sec) {
-  as.POSIXct(hms::hms(as.numeric(x) %/% sec * sec))
-}
-
-## plot by specified time interval (1-hours)
-rt %>%
-  mutate(time = round_time(created_at, 60 * 60)) %>%
-  group_by(time) %>%
-  summarise(sentiment = mean(sentiment, na.rm = TRUE)) %>%
-  mutate(valence = ifelse(sentiment > 0L, "Positive", "Negative")) %>%
-  ggplot(aes(x = time, y = sentiment)) +
-  geom_smooth(method = "loess", span = .1,
-    colour = "#aa11aadd", fill = "#bbbbbb11") +
-  geom_point(aes(fill = valence, colour = valence), 
-    shape = 21, alpha = .6, size = 3.5) +
-  theme_minimal(base_size = 15, base_family = "Roboto Condensed") +
-  theme(legend.position = "none",
-    axis.text = element_text(colour = "#222222"),
-    plot.title = element_text(size = rel(1.7), face = "bold"),
-    plot.subtitle = element_text(size = rel(1.3)),
-    plot.caption = element_text(colour = "#444444")) +
-  scale_fill_manual(
-    values = c(Positive = "#2244ee", Negative = "#dd2222")) +
-  scale_colour_manual(
-    values = c(Positive = "#001155", Negative = "#550000")) +
-  labs(x = NULL, y = NULL,
-    title = "Sentiment (valence) of #NICAR18 tweets over time",
-    subtitle = "Mean sentiment of tweets aggregated in one-hour intervals",
-    caption = "\nSource: Data gathered using rtweet. Sentiment analysis done using syuzhet") + 
-  ggsave("img/sentiment.png", width = 9, height = 7, units = "in")
-```
-
-![](README_files/figure-gfm/sentiment-1.png)<!-- -->
 
 <p align="center">
 

@@ -140,8 +140,8 @@ suppressPackageStartupMessages(library(tidyverse))
 
 In the code below, the data are summarized into a time series-like data frame and then plotted in order depict the frequency of tweets–aggregated in two-hour intevals–about nicar18 over time.
 
-```{r timefreq, fig.show=FALSE}
-rt %>%
+```{r timefreq, include=FALSE}
+p <- rt %>%
   filter(created_at > "2018-01-29") %>%
   ts_plot("2 hours", color = "transparent") +
   geom_smooth(method = "loess", se = FALSE, span = .1,
@@ -156,8 +156,8 @@ rt %>%
   labs(title = "Frequency of #NICAR18 tweets over time",
     subtitle = "Twitter status counts aggregated in two-hour intervals",
     caption = "\n\nSource: Data gathered via Twitter's standard `search/tweets` API using rtweet",
-    x = NULL, y = NULL) + 
-  ggsave("img/timefreq.png", width = 9, height = 7, units = "in")
+    x = NULL, y = NULL)
+ggsave("img/timefreq.png", p, width = 9, height = 7, units = "in")
 ```
 
 
@@ -169,7 +169,7 @@ rt %>%
 
 Next, some sentiment analysis of the tweets so far.
 
-```{r sentiment, fig.show=FALSE}
+```{r sentiment, fig.show=FALSE, include=FALSE}
 ## clean up the text a bit (rm mentions and links)
 rt$text2 <- gsub(
   "^RT:?\\s{0,}|#|@\\S+|https?[[:graph:]]+", "", rt$text)
@@ -188,7 +188,7 @@ round_time <- function(x, sec) {
 }
 
 ## plot by specified time interval (1-hours)
-rt %>%
+p <- rt %>%
   mutate(time = round_time(created_at, 60 * 60)) %>%
   group_by(time) %>%
   summarise(sentiment = mean(sentiment, na.rm = TRUE)) %>%
@@ -211,8 +211,9 @@ rt %>%
   labs(x = NULL, y = NULL,
     title = "Sentiment (valence) of #NICAR18 tweets over time",
     subtitle = "Mean sentiment of tweets aggregated in one-hour intervals",
-    caption = "\nSource: Data gathered using rtweet. Sentiment analysis done using syuzhet") + 
-  ggsave("img/sentiment.png", width = 9, height = 7, units = "in")
+    caption = "\nSource: Data gathered using rtweet. Sentiment analysis done using syuzhet")
+
+ggsave("img/sentiment.png", p, width = 9, height = 7, units = "in")
 ```
 
 <p align="center"><img width="100%" height="auto" src="img/sentiment.png" /></p>
