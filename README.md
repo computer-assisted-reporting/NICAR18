@@ -7,7 +7,23 @@ Conference.
 
 ## Data
 
-Our data collection method is described in detail below. Hoewver, if you
+### rtweet
+
+Whether you lookup the status IDs or search/stream new tweets, you’ll
+need to make sure to install the [rtweet](http://rtweet.info) package.
+The code below will install \[if it’s not already\] and load rtweet.
+
+``` r
+## install rtweet if not already
+if (!requireNamespace("rtweet", quietly = TRUE)) {
+  install.packages("rtweet")
+}
+
+## load rtweet
+library(rtweet)
+```
+
+Our data collection method is described in detail below. However, if you
 want to get straight to the data, simply run the following code:
 
 ``` r
@@ -22,22 +38,6 @@ ids <- readRDS("NICAR18_status_ids.rds")
 
 ## lookup data associated with status ids
 rt <- rtweet::lookup_tweets(ids$status_id)
-```
-
-### rtweet
-
-Whether you lookup the status IDs or search/stream new tweets, make sure
-you’ve installed the [rtweet](http://rtweet.info) package. The code
-below will install \[if it’s not already\] and load rtweet.
-
-``` r
-## install rtweet if not already
-if (!requireNamespace("rtweet", quietly = TRUE)) {
-  install.packages("rtweet")
-}
-
-## load rtweet
-library(rtweet)
 ```
 
 ### Search
@@ -101,7 +101,8 @@ saveRDS(rt[, "status_id"], file.path("data", "search-ids.rds"))
 ## Explore
 
 To explore the Twitter data, we recommend using the
-[tidyverse](http://tidyverse.org) packages.
+[tidyverse](http://tidyverse.org) packages. In the code below, we’ve
+also included our customized [ggplot2](http://ggplot2.org) theme.
 
 ``` r
 ## load tidyverse
@@ -112,8 +113,8 @@ theme_set(
   theme_minimal(base_size = 15, base_family = "Roboto Condensed") +
   theme(
     legend.position = "none",
-    plot.background = element_rect(colour = "#f7f7f7", fill = "#f7f7f7"),
-    panel.background = element_rect(fill = "#f7f7f7", colour = "#f7f7f7"),
+    plot.background = element_rect(colour = "#F6F8FA", fill = "#F6F8FA"),
+    panel.background = element_rect(fill = "#F6F8FA", colour = "#F6F8FA"),
     panel.grid.major = element_line(colour = "#cccccc"),
     panel.grid.minor = element_line(colour = "#cccccc"),
     axis.text = element_text(colour = "#222222"),
@@ -127,7 +128,7 @@ theme_set(
 
 In the code below, the data are summarized into a time series-like data
 frame and then plotted in order depict the frequency of
-tweets–aggregated in two-hour intevals–about nicar18 over time.
+tweets–aggregated in two-hour intevals–about \#nicar18 over time.
 
 ``` r
 p <- rt %>%
@@ -257,8 +258,8 @@ size <- (log(size) + sqrt(size)) / 3
 size <- size[match(names(size), names(igraph::V(g)))]
 
 ## plot network
-png("img/network.png", width = 36, height = 36, units = "in", res = 300)
-par(mar = c(12, 6, 15, 6))
+png("img/network.png", width = 32, height = 32, units = "in", res = 300)
+par(mar = c(12, 6, 15, 6), bg = "#F6F8FA")
 plot(g,
   edge.size = .4,
   curved = FALSE,
