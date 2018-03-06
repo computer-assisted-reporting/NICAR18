@@ -288,12 +288,3 @@ nodes$screen_name <- paste0(
 nodes$n <- round(nodes$n, 3)
 dplyr::select(nodes, rank, screen_name, log_n = n)
 ```
-
-<style>
-table {
-  display: table;
-  width: unset;
-  margin: 0 auto;
-  min-width: 50%;
-}
-</style>

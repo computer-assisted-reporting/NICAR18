@@ -314,54 +314,53 @@ dplyr::select(nodes, rank, screen_name, log_n = n)
 
 | rank | screen\_name                                                       | log\_n |
 | ---: | :----------------------------------------------------------------- | -----: |
-|    1 | <a href="https://twitter.com/IRE_NICAR">@IRE\_NICAR</a>            |  3.537 |
+|    1 | <a href="https://twitter.com/IRE_NICAR">@IRE\_NICAR</a>            |  4.027 |
 |    2 | <a href="https://twitter.com/DougHaddix">@DougHaddix</a>           |  3.080 |
-|    3 | <a href="https://twitter.com/bymarkwalker">@bymarkwalker</a>       |  2.644 |
-|    4 | <a href="https://twitter.com/MacDiva">@MacDiva</a>                 |  2.594 |
-|    5 | <a href="https://twitter.com/knightlab">@knightlab</a>             |  2.594 |
-|    6 | <a href="https://twitter.com/sarhutch">@sarhutch</a>               |  2.594 |
-|    7 | <a href="https://twitter.com/Danict89">@Danict89</a>               |  2.434 |
-|    8 | <a href="https://twitter.com/asduner">@asduner</a>                 |  2.194 |
-|    9 | <a href="https://twitter.com/charlesminshew">@charlesminshew</a>   |  2.057 |
-|   10 | <a href="https://twitter.com/mgafni">@mgafni</a>                   |  1.983 |
-|   11 | <a href="https://twitter.com/lucyparsonslabs">@lucyparsonslabs</a> |  1.983 |
-|   12 | <a href="https://twitter.com/JoeGermuska">@JoeGermuska</a>         |  1.983 |
-|   13 | <a href="https://twitter.com/rachel_shorey">@rachel\_shorey</a>    |  1.983 |
-|   14 | <a href="https://twitter.com/emamd">@emamd</a>                     |  1.983 |
-|   15 | <a href="https://twitter.com/citizenkrans">@citizenkrans</a>       |  1.905 |
-|   16 | <a href="https://twitter.com/opennews">@opennews</a>               |  1.905 |
-|   17 | <a href="https://twitter.com/TWallack">@TWallack</a>               |  1.822 |
-|   18 | <a href="https://twitter.com/martinstabe">@martinstabe</a>         |  1.822 |
-|   19 | <a href="https://twitter.com/sandhya__k">@sandhya\_\_k</a>         |  1.732 |
-|   20 | <a href="https://twitter.com/city_bureau">@city\_bureau</a>        |  1.636 |
-|   21 | <a href="https://twitter.com/ChiAppleseed">@ChiAppleseed</a>       |  1.636 |
-|   22 | <a href="https://twitter.com/stiles">@stiles</a>                   |  1.636 |
-|   23 | <a href="https://twitter.com/Orla_McCaffrey">@Orla\_McCaffrey</a>  |  1.531 |
-|   24 | <a href="https://twitter.com/palewire">@palewire</a>               |  1.414 |
-|   25 | <a href="https://twitter.com/davidherzog">@davidherzog</a>         |  1.414 |
-|   26 | <a href="https://twitter.com/derekeder">@derekeder</a>             |  1.282 |
-|   27 | <a href="https://twitter.com/myersjustinc">@myersjustinc</a>       |  1.282 |
-|   28 | <a href="https://twitter.com/DJNF">@DJNF</a>                       |  1.282 |
-|   29 | <a href="https://twitter.com/becca_aa">@becca\_aa</a>              |  1.282 |
-|   30 | <a href="https://twitter.com/forestgregg">@forestgregg</a>         |  1.129 |
-|   31 | <a href="https://twitter.com/AditiHBhandari">@AditiHBhandari</a>   |  1.129 |
-|   32 | <a href="https://twitter.com/MadiLAlexander">@MadiLAlexander</a>   |  1.129 |
-|   33 | <a href="https://twitter.com/kissane">@kissane</a>                 |  0.944 |
-|   34 | <a href="https://twitter.com/robertrdenton">@robertrdenton</a>     |  0.702 |
-|   35 | <a href="https://twitter.com/MikeStucka">@MikeStucka</a>           |  0.702 |
-|   36 | <a href="https://twitter.com/SamanthaSunne">@SamanthaSunne</a>     |  0.702 |
-|   37 | <a href="https://twitter.com/jonkeegan">@jonkeegan</a>             |  0.702 |
-|   38 | <a href="https://twitter.com/pinardag">@pinardag</a>               |  0.702 |
-|   39 | <a href="https://twitter.com/kschorsch">@kschorsch</a>             |  0.333 |
-|   40 | <a href="https://twitter.com/DiannaNanez">@DiannaNanez</a>         |  0.333 |
+|    3 | <a href="https://twitter.com/bymarkwalker">@bymarkwalker</a>       |  2.831 |
+|    4 | <a href="https://twitter.com/sarhutch">@sarhutch</a>               |  2.740 |
+|    5 | <a href="https://twitter.com/MacDiva">@MacDiva</a>                 |  2.692 |
+|    6 | <a href="https://twitter.com/knightlab">@knightlab</a>             |  2.594 |
+|    7 | <a href="https://twitter.com/charlesminshew">@charlesminshew</a>   |  2.542 |
+|    8 | <a href="https://twitter.com/Danict89">@Danict89</a>               |  2.434 |
+|    9 | <a href="https://twitter.com/asduner">@asduner</a>                 |  2.194 |
+|   10 | <a href="https://twitter.com/rachel_shorey">@rachel\_shorey</a>    |  2.127 |
+|   11 | <a href="https://twitter.com/sandhya__k">@sandhya\_\_k</a>         |  2.057 |
+|   12 | <a href="https://twitter.com/mgafni">@mgafni</a>                   |  1.983 |
+|   13 | <a href="https://twitter.com/lucyparsonslabs">@lucyparsonslabs</a> |  1.983 |
+|   14 | <a href="https://twitter.com/JoeGermuska">@JoeGermuska</a>         |  1.983 |
+|   15 | <a href="https://twitter.com/emamd">@emamd</a>                     |  1.983 |
+|   16 | <a href="https://twitter.com/citizenkrans">@citizenkrans</a>       |  1.905 |
+|   17 | <a href="https://twitter.com/opennews">@opennews</a>               |  1.905 |
+|   18 | <a href="https://twitter.com/PBienenfeld">@PBienenfeld</a>         |  1.822 |
+|   19 | <a href="https://twitter.com/TWallack">@TWallack</a>               |  1.822 |
+|   20 | <a href="https://twitter.com/martinstabe">@martinstabe</a>         |  1.822 |
+|   21 | <a href="https://twitter.com/kristinhussey1">@kristinhussey1</a>   |  1.732 |
+|   22 | <a href="https://twitter.com/Orla_McCaffrey">@Orla\_McCaffrey</a>  |  1.636 |
+|   23 | <a href="https://twitter.com/city_bureau">@city\_bureau</a>        |  1.636 |
+|   24 | <a href="https://twitter.com/ChiAppleseed">@ChiAppleseed</a>       |  1.636 |
+|   25 | <a href="https://twitter.com/stiles">@stiles</a>                   |  1.636 |
+|   26 | <a href="https://twitter.com/palewire">@palewire</a>               |  1.414 |
+|   27 | <a href="https://twitter.com/davidherzog">@davidherzog</a>         |  1.414 |
+|   28 | <a href="https://twitter.com/DJNF">@DJNF</a>                       |  1.414 |
+|   29 | <a href="https://twitter.com/SamanthaSunne">@SamanthaSunne</a>     |  1.282 |
+|   30 | <a href="https://twitter.com/derekeder">@derekeder</a>             |  1.282 |
+|   31 | <a href="https://twitter.com/myersjustinc">@myersjustinc</a>       |  1.282 |
+|   32 | <a href="https://twitter.com/becca_aa">@becca\_aa</a>              |  1.282 |
+|   33 | <a href="https://twitter.com/forestgregg">@forestgregg</a>         |  1.129 |
+|   34 | <a href="https://twitter.com/AditiHBhandari">@AditiHBhandari</a>   |  1.129 |
+|   35 | <a href="https://twitter.com/MadiLAlexander">@MadiLAlexander</a>   |  1.129 |
+|   36 | <a href="https://twitter.com/jonkeegan">@jonkeegan</a>             |  1.129 |
+|   37 | <a href="https://twitter.com/albertocairo">@albertocairo</a>       |  0.944 |
+|   38 | <a href="https://twitter.com/kissane">@kissane</a>                 |  0.944 |
+|   39 | <a href="https://twitter.com/robertrdenton">@robertrdenton</a>     |  0.702 |
+|   40 | <a href="https://twitter.com/MikeStucka">@MikeStucka</a>           |  0.702 |
+|   41 | <a href="https://twitter.com/_thetextfiles">@\_thetextfiles</a>    |  0.702 |
+|   42 | <a href="https://twitter.com/pinardag">@pinardag</a>               |  0.702 |
+|   43 | <a href="https://twitter.com/dataeditor">@dataeditor</a>           |  0.702 |
+|   44 | <a href="https://twitter.com/zammagazine">@zammagazine</a>         |  0.333 |
+|   45 | <a href="https://twitter.com/FrancescaFionda">@FrancescaFionda</a> |  0.333 |
+|   46 | <a href="https://twitter.com/kschorsch">@kschorsch</a>             |  0.333 |
+|   47 | <a href="https://twitter.com/DiannaNanez">@DiannaNanez</a>         |  0.333 |
+|   48 | <a href="https://twitter.com/ByJohnRRoby">@ByJohnRRoby</a>         |  0.333 |
 
 </div>
-
-<style>
-table {
-  display: table;
-  width: unset;
-  margin: 0 auto;
-  min-width: 50%;
-}
-</style>
