@@ -60,11 +60,11 @@ plot(g,
   edge.color = "#0066aa",
   edge.width = .2,
   main = "")
-par(mar = c(9, 6, 9, 6))
+par(mar = c(4, 6, 8, 6))
 title("Semantic network of users tweeting about #NICAR18",
   adj = 0, family = "Roboto Condensed", cex.main = 6.5)
 mtext("Source: Data gathered using rtweet. Network analysis done using igraph",
-  side = 1, line = 0, adj = 1.0, cex = 3.8,
+  side = 1, line = 1, adj = 1.0, cex = 3.8,
   family = "Roboto Condensed", col = "#222222")
 mtext("User connections by mentions, replies, retweets, and quotes",
   side = 3, line = -4.25, adj = 0,
