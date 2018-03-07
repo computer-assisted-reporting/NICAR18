@@ -47,7 +47,7 @@ rt <- rtweet::lookup_tweets(ids$status_id)
 
 ### Search
 
-One of the easiest ways to gather Twitter data is to search for the data (using Twitter's REST API). Unlike streaming, searching makes it possible to go back in time. Unfortunately, Twitter sets a rather restrictive cap–roughly nine days–on how far back you can go. Regardless, searching for tweets is often the preferred method. For example, the code below is setup in such a way that it can be executed once \[or even several times\] a day throughout the conference. See the [R code here](search.R).
+One of the easiest ways to gather Twitter data is to search for the data (using Twitter's REST API). Unlike streaming, searching makes it possible to go back in time. Unfortunately, Twitter sets a rather restrictive cap–roughly nine days–on how far back you can go. Regardless, searching for tweets is often the preferred method. For example, the code below is setup in such a way that it can be executed once \[or even several times\] a day throughout the conference. See the [R code here](R/search.R).
 
 Here's some example code showing what essentially we're doing to collect the data:
 
@@ -62,11 +62,11 @@ rt <- search_tweets(paste(nicar18conf, collapse = " OR "), n = 10000)
 Explore
 -------
 
-To explore the Twitter data, we recommend using the [tidyverse](http://tidyverse.org) packages. We're also using a customized [ggplot2](http://ggplot2.org) theme. See the [R code here](tidyggplot.R).
+To explore the Twitter data, we recommend using the [tidyverse](http://tidyverse.org) packages. We're also using a customized [ggplot2](http://ggplot2.org) theme. See the [R code here](R/tidyggplot.R).
 
 ### Tweet frequency over time
 
-To create the image below, the data were summarized into a time series-like data frame and then plotted in order depict the frequency of tweets–aggregated in two-hour intevals–about \#nicar18 over time. See the [R code here](ts.R).
+To create the image below, the data were summarized into a time series-like data frame and then plotted in order depict the frequency of tweets–aggregated in two-hour intevals–about \#nicar18 over time. See the [R code here](R/ts.R).
 
 <p align="center">
 <img width="100%" height="auto" src="img/timefreq.png" />
@@ -75,7 +75,7 @@ To create the image below, the data were summarized into a time series-like data
 
 ### Positive/negative sentiment
 
-Next, some sentiment analysis of the tweets so far. See the [R code here](sentiment.R).
+Next, some sentiment analysis of the tweets so far. See the [R code here](R/sentiment.R).
 
 <p align="center">
 <img width="100%" height="auto" src="img/sentiment.png" />
@@ -84,7 +84,7 @@ Next, some sentiment analysis of the tweets so far. See the [R code here](sentim
 
 ### Semantic networks
 
-The image below depicts a quick and dirty visualization of the semantic network (connections via retweet, quote, mention, or reply) as it is observed in the data. See the [R code here](network.R).
+The image below depicts a quick and dirty visualization of the semantic network (connections via retweet, quote, mention, or reply) as it is observed in the data. See the [R code here](R/network.R).
 
 <p align="center">
 <img width="100%" height="auto" src="img/network.png" />
