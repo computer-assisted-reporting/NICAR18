@@ -93,16 +93,6 @@ The image below depicts a quick and dirty visualization of the semantic network 
 
 Ideally, the network visualization would be an interactive, searchable graphic. Since it's not, I've printed out the node size values below.
 
-``` r
-nodes <- as_tibble(sort(size, decreasing = TRUE))
-nodes$rank <- seq_len(nrow(nodes))
-nodes$screen_name <- paste0(
-  '<a href="https://twitter.com/', nodes$screen_name, 
-  '">@', nodes$screen_name, '</a>')
-nodes$n <- round(nodes$n, 3)
-dplyr::select(nodes, rank, screen_name, log_n = n)
-```
-
 |  rank| screen\_name                                                       |  log\_n|
 |-----:|:-------------------------------------------------------------------|-------:|
 |     1| <a href="https://twitter.com/IRE_NICAR">@IRE\_NICAR</a>            |   5.689|

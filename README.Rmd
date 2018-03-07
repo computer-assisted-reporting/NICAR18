@@ -110,7 +110,7 @@ source("R/network.R")
 
 Ideally, the network visualization would be an interactive, searchable graphic. Since it's not, I've printed out the node size values below.
 
-```{r}
+```{r, echo=FALSE}
 nodes <- as_tibble(sort(size, decreasing = TRUE))
 nodes$rank <- seq_len(nrow(nodes))
 nodes$screen_name <- paste0(
