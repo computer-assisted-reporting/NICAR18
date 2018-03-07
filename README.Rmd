@@ -1,6 +1,5 @@
 ---
 title: "#NICAR18 Tweets"
-author: "A repository for tracking [#NICAR18 tweets](https://twitter.com/hashtag/NICAR18?f=tweets&vertical=default&src=hash), the official hashtag of 2018 annual Computer-Assisted Reporting Conference."
 output: 
   github_document:
     toc: true
@@ -10,6 +9,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
 ```
+
+This is a dedicated repository for tracking [#NICAR18 tweets](https://twitter.com/hashtag/NICAR18?f=tweets&vertical=default&src=hash) (the official hashtag of 2018 annual Computer-Assisted Reporting Conference).
 
 ## Data
 
@@ -125,6 +126,7 @@ theme_set(
 In the code below, the data are summarized into a time series-like data frame and then plotted in order depict the frequency of tweets–aggregated in two-hour intevals–about \#nicar18 over time.
 
 ```{r timefreq}
+## create ggplot object
 p <- rt %>%
   filter(created_at > "2018-01-29") %>%
   ts_plot("2 hours", color = "transparent") +
@@ -136,6 +138,8 @@ p <- rt %>%
     subtitle = "Twitter status counts aggregated in two-hour intervals",
     caption = "\nSource: Data gathered via Twitter's standard `search/tweets` API using rtweet",
     x = NULL, y = NULL)
+
+## save timefreq plot
 ggsave("img/timefreq.png", p, width = 9, height = 7, units = "in")
 ```
 
@@ -167,6 +171,12 @@ rt$sentiment3 <- syuzhet::get_sentiment(rt$text2, "afinn")
 rt$sentiment <- (scale(rt$sentiment1)[, 1] + 
     scale(rt$sentiment2)[, 1] + scale(rt$sentiment3)[, 1]) / 3
 
+## save aggregated data as CSV file (prepend ID to ensure it's a string)
+rt %>%
+  select(status_id, created_at, sentiment) %>%
+  mutate(status_id = paste0("x", status_id)) %>%
+  write_csv("data/status_id-created_at-sentiment.csv")
+
 ## define function to round time into rounded var
 round_time <- function(x, sec) {
   as.POSIXct(hms::hms(as.numeric(x) %/% sec * sec))
@@ -192,6 +202,7 @@ p <- rt %>%
     subtitle = "Mean sentiment of tweets aggregated in three-hour intervals",
     caption = "\nSource: Data gathered using rtweet. Sentiment analysis done using syuzhet")
 
+## save sentiment plot image
 ggsave("img/sentiment.png", p, width = 9, height = 7, units = "in")
 ```
 
@@ -248,7 +259,7 @@ size <- (log(size) + sqrt(size)) / 3
 ## reorder freq table
 size <- size[match(names(size), names(igraph::V(g)))]
 
-## plot network
+## plot and save network image
 png("img/network.png", width = 32, height = 32, units = "in", res = 300)
 par(mar = c(12, 6, 15, 6), bg = "#F6F8FA")
 plot(g,
