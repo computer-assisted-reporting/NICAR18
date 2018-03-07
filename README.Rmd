@@ -52,7 +52,7 @@ One of the easiest ways to gather Twitter data is to search for the data (using 
 Here's some example code showing what essentially we're doing to collect the data:
 
 ```{r, echo=FALSE}
-source("search.R")
+source("R/search.R")
 ```
 
 ```{r, eval=FALSE}
@@ -68,7 +68,7 @@ rt <- search_tweets(paste(nicar18conf, collapse = " OR "), n = 10000)
 To explore the Twitter data, we recommend using the [tidyverse](http://tidyverse.org) packages. We're also using a customized [ggplot2](http://ggplot2.org) theme. See the [R code here](tidyggplot.R).
 
 ```{r, echo=FALSE}
-source("tidyggplot.R")
+source("R/tidyggplot.R")
 ```
 
 ### Tweet frequency over time
@@ -76,7 +76,7 @@ source("tidyggplot.R")
 To create the image below, the data were summarized into a time series-like data frame and then plotted in order depict the frequency of tweets–aggregated in two-hour intevals–about \#nicar18 over time. See the [R code here](ts.R).
 
 ```{r timefreq, echo=FALSE}
-source("ts.R")
+source("R/ts.R")
 ```
 
 <p align="center"><img width="100%" height="auto" src="img/timefreq.png" /></p>
@@ -88,7 +88,7 @@ source("ts.R")
 Next, some sentiment analysis of the tweets so far. See the [R code here](sentiment.R).
 
 ```{r sentiment, echo=FALSE}
-source("sentiment.R")
+source("R/sentiment.R")
 ```
 
 <p align="center"><img width="100%" height="auto" src="img/sentiment.png" /></p>
@@ -100,7 +100,7 @@ source("sentiment.R")
 The image below depicts a quick and dirty visualization of the semantic network (connections via retweet, quote, mention, or reply) as it is observed in the data. See the [R code here](network.R).
 
 ```{r network, echo=FALSE}
-source("network.R")
+source("R/network.R")
 ```
 
 
