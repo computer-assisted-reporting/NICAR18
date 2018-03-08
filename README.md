@@ -95,14 +95,14 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 
 |  rank| screen\_name                                                       |  log\_n|
 |-----:|:-------------------------------------------------------------------|-------:|
-|     1| <a href="https://twitter.com/IRE_NICAR">@IRE\_NICAR</a>            |   5.969|
+|     1| <a href="https://twitter.com/IRE_NICAR">@IRE\_NICAR</a>            |   5.999|
 |     2| <a href="https://twitter.com/MacDiva">@MacDiva</a>                 |   4.105|
 |     3| <a href="https://twitter.com/sharon000">@sharon000</a>             |   3.338|
 |     4| <a href="https://twitter.com/jeremybowers">@jeremybowers</a>       |   3.303|
 |     5| <a href="https://twitter.com/sarhutch">@sarhutch</a>               |   3.267|
-|     6| <a href="https://twitter.com/Danict89">@Danict89</a>               |   3.157|
-|     7| <a href="https://twitter.com/palewire">@palewire</a>               |   3.157|
-|     8| <a href="https://twitter.com/DougHaddix">@DougHaddix</a>           |   3.157|
+|     6| <a href="https://twitter.com/DougHaddix">@DougHaddix</a>           |   3.231|
+|     7| <a href="https://twitter.com/Danict89">@Danict89</a>               |   3.157|
+|     8| <a href="https://twitter.com/palewire">@palewire</a>               |   3.157|
 |     9| <a href="https://twitter.com/knightlab">@knightlab</a>             |   3.119|
 |    10| <a href="https://twitter.com/albertocairo">@albertocairo</a>       |   3.080|
 |    11| <a href="https://twitter.com/asduner">@asduner</a>                 |   3.001|
