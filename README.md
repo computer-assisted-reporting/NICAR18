@@ -114,8 +114,8 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |    17| <a href="https://twitter.com/fvaraorta">@fvaraorta</a>               |   6.426|
 |    18| <a href="https://twitter.com/Cezary">@Cezary</a>                     |   6.189|
 |    19| <a href="https://twitter.com/ultracasual">@ultracasual</a>           |   6.174|
-|    20| <a href="https://twitter.com/AditiHBhandari">@AditiHBhandari</a>     |   6.043|
-|    21| <a href="https://twitter.com/sandhya__k">@sandhya\_\_k</a>           |   6.028|
+|    20| <a href="https://twitter.com/AditiHBhandari">@AditiHBhandari</a>     |   6.087|
+|    21| <a href="https://twitter.com/sandhya__k">@sandhya\_\_k</a>           |   6.073|
 |    22| <a href="https://twitter.com/palewire">@palewire</a>                 |   5.939|
 |    23| <a href="https://twitter.com/LNdata">@LNdata</a>                     |   5.923|
 |    24| <a href="https://twitter.com/greglinch">@greglinch</a>               |   5.862|
