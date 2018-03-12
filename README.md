@@ -108,8 +108,8 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |    11| <a href="https://twitter.com/itsgeorrge">@itsgeorrge</a>             |   6.880|
 |    12| <a href="https://twitter.com/barbaramaseda">@barbaramaseda</a>       |   6.704|
 |    13| <a href="https://twitter.com/mizzousundevil">@mizzousundevil</a>     |   6.652|
-|    14| <a href="https://twitter.com/martinstabe">@martinstabe</a>           |   6.534|
-|    15| <a href="https://twitter.com/merbroussard">@merbroussard</a>         |   6.507|
+|    14| <a href="https://twitter.com/merbroussard">@merbroussard</a>         |   6.534|
+|    15| <a href="https://twitter.com/martinstabe">@martinstabe</a>           |   6.534|
 |    16| <a href="https://twitter.com/myersjustinc">@myersjustinc</a>         |   6.507|
 |    17| <a href="https://twitter.com/fvaraorta">@fvaraorta</a>               |   6.453|
 |    18| <a href="https://twitter.com/ultracasual">@ultracasual</a>           |   6.203|
@@ -119,8 +119,8 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |    22| <a href="https://twitter.com/LNdata">@LNdata</a>                     |   5.954|
 |    23| <a href="https://twitter.com/palewire">@palewire</a>                 |   5.939|
 |    24| <a href="https://twitter.com/greglinch">@greglinch</a>               |   5.862|
-|    25| <a href="https://twitter.com/TWallack">@TWallack</a>                 |   5.673|
-|    26| <a href="https://twitter.com/charlesornstein">@charlesornstein</a>   |   5.657|
+|    25| <a href="https://twitter.com/charlesornstein">@charlesornstein</a>   |   5.689|
+|    26| <a href="https://twitter.com/TWallack">@TWallack</a>                 |   5.673|
 |    27| <a href="https://twitter.com/hadleywickham">@hadleywickham</a>       |   5.640|
 |    28| <a href="https://twitter.com/Riogringa">@Riogringa</a>               |   5.542|
 |    29| <a href="https://twitter.com/sarhutch">@sarhutch</a>                 |   5.525|
