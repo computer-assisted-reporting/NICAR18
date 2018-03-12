@@ -114,10 +114,10 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |    17| <a href="https://twitter.com/myersjustinc">@myersjustinc</a>         |   6.507|
 |    18| <a href="https://twitter.com/Cezary">@Cezary</a>                     |   6.316|
 |    19| <a href="https://twitter.com/ultracasual">@ultracasual</a>           |   6.288|
-|    20| <a href="https://twitter.com/LNdata">@LNdata</a>                     |   6.189|
+|    20| <a href="https://twitter.com/LNdata">@LNdata</a>                     |   6.217|
 |    21| <a href="https://twitter.com/AditiHBhandari">@AditiHBhandari</a>     |   6.189|
 |    22| <a href="https://twitter.com/sandhya__k">@sandhya\_\_k</a>           |   6.087|
-|    23| <a href="https://twitter.com/palewire">@palewire</a>                 |   5.984|
+|    23| <a href="https://twitter.com/palewire">@palewire</a>                 |   6.014|
 |    24| <a href="https://twitter.com/greglinch">@greglinch</a>               |   5.877|
 |    25| <a href="https://twitter.com/charlesornstein">@charlesornstein</a>   |   5.768|
 |    26| <a href="https://twitter.com/TWallack">@TWallack</a>                 |   5.673|
@@ -139,7 +139,7 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |    42| <a href="https://twitter.com/NataliaMazotte">@NataliaMazotte</a>     |   5.119|
 |    43| <a href="https://twitter.com/derekwillis">@derekwillis</a>           |   5.101|
 |    44| <a href="https://twitter.com/jeremycaplan">@jeremycaplan</a>         |   5.063|
-|    45| <a href="https://twitter.com/PatrickMGarvin">@PatrickMGarvin</a>     |   5.044|
+|    45| <a href="https://twitter.com/PatrickMGarvin">@PatrickMGarvin</a>     |   5.063|
 |    46| <a href="https://twitter.com/SophieWarnes">@SophieWarnes</a>         |   5.044|
 |    47| <a href="https://twitter.com/JonSCollins">@JonSCollins</a>           |   5.006|
 |    48| <a href="https://twitter.com/Jeremy_CF_Lin">@Jeremy\_CF\_Lin</a>     |   4.967|
@@ -163,10 +163,10 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |    66| <a href="https://twitter.com/AnnaFlagg">@AnnaFlagg</a>               |   4.554|
 |    67| <a href="https://twitter.com/grovesprof">@grovesprof</a>             |   4.554|
 |    68| <a href="https://twitter.com/jonkeegan">@jonkeegan</a>               |   4.554|
-|    69| <a href="https://twitter.com/knightlab">@knightlab</a>               |   4.510|
-|    70| <a href="https://twitter.com/ucbsoj">@ucbsoj</a>                     |   4.510|
-|    71| <a href="https://twitter.com/momiperalta">@momiperalta</a>           |   4.487|
-|    72| <a href="https://twitter.com/gijn">@gijn</a>                         |   4.487|
+|    69| <a href="https://twitter.com/gijn">@gijn</a>                         |   4.510|
+|    70| <a href="https://twitter.com/knightlab">@knightlab</a>               |   4.510|
+|    71| <a href="https://twitter.com/ucbsoj">@ucbsoj</a>                     |   4.510|
+|    72| <a href="https://twitter.com/momiperalta">@momiperalta</a>           |   4.487|
 |    73| <a href="https://twitter.com/_erinmansfield">@\_erinmansfield</a>    |   4.465|
 |    74| <a href="https://twitter.com/macloo">@macloo</a>                     |   4.465|
 |    75| <a href="https://twitter.com/haddadme">@haddadme</a>                 |   4.465|
