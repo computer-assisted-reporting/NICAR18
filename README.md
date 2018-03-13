@@ -104,7 +104,7 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |     7| <a href="https://twitter.com/dataeditor">@dataeditor</a>             |   7.632|
 |     8| <a href="https://twitter.com/christinezhang">@christinezhang</a>     |   7.343|
 |     9| <a href="https://twitter.com/rachelwalexande">@rachelwalexande</a>   |   7.240|
-|    10| <a href="https://twitter.com/itsgeorrge">@itsgeorrge</a>             |   7.146|
+|    10| <a href="https://twitter.com/itsgeorrge">@itsgeorrge</a>             |   7.170|
 |    11| <a href="https://twitter.com/asduner">@asduner</a>                   |   6.991|
 |    12| <a href="https://twitter.com/mizzousundevil">@mizzousundevil</a>     |   6.905|
 |    13| <a href="https://twitter.com/barbaramaseda">@barbaramaseda</a>       |   6.704|
@@ -283,10 +283,10 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |   186| <a href="https://twitter.com/Gregatao">@Gregatao</a>                 |   3.372|
 |   187| <a href="https://twitter.com/DanielTrielli">@DanielTrielli</a>       |   3.338|
 |   188| <a href="https://twitter.com/davidherzog">@davidherzog</a>           |   3.338|
-|   189| <a href="https://twitter.com/rararahima">@rararahima</a>             |   3.338|
-|   190| <a href="https://twitter.com/JoeGermuska">@JoeGermuska</a>           |   3.303|
-|   191| <a href="https://twitter.com/allisonsross">@allisonsross</a>         |   3.303|
-|   192| <a href="https://twitter.com/zubakskees">@zubakskees</a>             |   3.267|
+|   189| <a href="https://twitter.com/zubakskees">@zubakskees</a>             |   3.338|
+|   190| <a href="https://twitter.com/rararahima">@rararahima</a>             |   3.338|
+|   191| <a href="https://twitter.com/JoeGermuska">@JoeGermuska</a>           |   3.303|
+|   192| <a href="https://twitter.com/allisonsross">@allisonsross</a>         |   3.303|
 |   193| <a href="https://twitter.com/magiccia">@magiccia</a>                 |   3.267|
 |   194| <a href="https://twitter.com/amyjo_brown">@amyjo\_brown</a>          |   3.267|
 |   195| <a href="https://twitter.com/JakeaEkdahl">@JakeaEkdahl</a>           |   3.267|
