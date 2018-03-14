@@ -97,7 +97,7 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |-----:|:---------------------------------------------------------------------|-------:|
 |     1| <a href="https://twitter.com/IRE_NICAR">@IRE\_NICAR</a>              |  10.755|
 |     2| <a href="https://twitter.com/MacDiva">@MacDiva</a>                   |  10.028|
-|     3| <a href="https://twitter.com/Danict89">@Danict89</a>                 |   9.509|
+|     3| <a href="https://twitter.com/Danict89">@Danict89</a>                 |   9.525|
 |     4| <a href="https://twitter.com/iff_or">@iff\_or</a>                    |   7.760|
 |     5| <a href="https://twitter.com/albertocairo">@albertocairo</a>         |   7.696|
 |     6| <a href="https://twitter.com/susannahlocke">@susannahlocke</a>       |   7.685|
@@ -119,8 +119,8 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |    22| <a href="https://twitter.com/sandhya__k">@sandhya\_\_k</a>           |   6.087|
 |    23| <a href="https://twitter.com/palewire">@palewire</a>                 |   6.058|
 |    24| <a href="https://twitter.com/greglinch">@greglinch</a>               |   5.954|
-|    25| <a href="https://twitter.com/dancow">@dancow</a>                     |   5.893|
-|    26| <a href="https://twitter.com/charlesornstein">@charlesornstein</a>   |   5.893|
+|    25| <a href="https://twitter.com/charlesornstein">@charlesornstein</a>   |   5.923|
+|    26| <a href="https://twitter.com/dancow">@dancow</a>                     |   5.893|
 |    27| <a href="https://twitter.com/TWallack">@TWallack</a>                 |   5.689|
 |    28| <a href="https://twitter.com/hadleywickham">@hadleywickham</a>       |   5.657|
 |    29| <a href="https://twitter.com/sarhutch">@sarhutch</a>                 |   5.591|
