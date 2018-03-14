@@ -95,7 +95,7 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 
 |  rank| screen\_name                                                         |  log\_n|
 |-----:|:---------------------------------------------------------------------|-------:|
-|     1| <a href="https://twitter.com/IRE_NICAR">@IRE\_NICAR</a>              |  10.839|
+|     1| <a href="https://twitter.com/IRE_NICAR">@IRE\_NICAR</a>              |  10.846|
 |     2| <a href="https://twitter.com/MacDiva">@MacDiva</a>                   |  10.058|
 |     3| <a href="https://twitter.com/Danict89">@Danict89</a>                 |   9.662|
 |     4| <a href="https://twitter.com/iff_or">@iff\_or</a>                    |   7.802|
@@ -775,12 +775,13 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |   678| <a href="https://twitter.com/Futureof_News">@Futureof\_News</a>      |   0.702|
 |   679| <a href="https://twitter.com/asincopado">@asincopado</a>             |   0.702|
 |   680| <a href="https://twitter.com/FrancescaFionda">@FrancescaFionda</a>   |   0.702|
-|   681| <a href="https://twitter.com/rachelacrosby">@rachelacrosby</a>       |   0.333|
-|   682| <a href="https://twitter.com/TMSWatchdog">@TMSWatchdog</a>           |   0.333|
-|   683| <a href="https://twitter.com/JackHowa">@JackHowa</a>                 |   0.333|
-|   684| <a href="https://twitter.com/CSPA">@CSPA</a>                         |   0.333|
-|   685| <a href="https://twitter.com/DanJFord">@DanJFord</a>                 |   0.333|
-|   686| <a href="https://twitter.com/MMInvestigates">@MMInvestigates</a>     |   0.333|
-|   687| <a href="https://twitter.com/NCDJ_ASU">@NCDJ\_ASU</a>                |   0.333|
-|   688| <a href="https://twitter.com/noeL_maS">@noeL\_maS</a>                |   0.333|
-|   689| <a href="https://twitter.com/nyiathenomad">@nyiathenomad</a>         |   0.333|
+|   681| <a href="https://twitter.com/phileil">@phileil</a>                   |   0.333|
+|   682| <a href="https://twitter.com/rachelacrosby">@rachelacrosby</a>       |   0.333|
+|   683| <a href="https://twitter.com/TMSWatchdog">@TMSWatchdog</a>           |   0.333|
+|   684| <a href="https://twitter.com/JackHowa">@JackHowa</a>                 |   0.333|
+|   685| <a href="https://twitter.com/CSPA">@CSPA</a>                         |   0.333|
+|   686| <a href="https://twitter.com/DanJFord">@DanJFord</a>                 |   0.333|
+|   687| <a href="https://twitter.com/MMInvestigates">@MMInvestigates</a>     |   0.333|
+|   688| <a href="https://twitter.com/NCDJ_ASU">@NCDJ\_ASU</a>                |   0.333|
+|   689| <a href="https://twitter.com/noeL_maS">@noeL\_maS</a>                |   0.333|
+|   690| <a href="https://twitter.com/nyiathenomad">@nyiathenomad</a>         |   0.333|
