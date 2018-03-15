@@ -101,7 +101,7 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |     4| <a href="https://twitter.com/iff_or">@iff\_or</a>                    |   7.802|
 |     5| <a href="https://twitter.com/susannahlocke">@susannahlocke</a>       |   7.707|
 |     6| <a href="https://twitter.com/albertocairo">@albertocairo</a>         |   7.696|
-|     7| <a href="https://twitter.com/dataeditor">@dataeditor</a>             |   7.675|
+|     7| <a href="https://twitter.com/dataeditor">@dataeditor</a>             |   7.685|
 |     8| <a href="https://twitter.com/christinezhang">@christinezhang</a>     |   7.467|
 |     9| <a href="https://twitter.com/rachelwalexande">@rachelwalexande</a>   |   7.298|
 |    10| <a href="https://twitter.com/itsgeorrge">@itsgeorrge</a>             |   7.193|
@@ -264,9 +264,9 @@ Ideally, the network visualization would be an interactive, searchable graphic. 
 |   167| <a href="https://twitter.com/dangerscarf">@dangerscarf</a>           |   3.505|
 |   168| <a href="https://twitter.com/HamdanAzhar">@HamdanAzhar</a>           |   3.505|
 |   169| <a href="https://twitter.com/mattdrange">@mattdrange</a>             |   3.472|
-|   170| <a href="https://twitter.com/msanchezMIA">@msanchezMIA</a>           |   3.472|
-|   171| <a href="https://twitter.com/LeilaHaddou">@LeilaHaddou</a>           |   3.440|
-|   172| <a href="https://twitter.com/kimbriellwapo">@kimbriellwapo</a>       |   3.440|
+|   170| <a href="https://twitter.com/kimbriellwapo">@kimbriellwapo</a>       |   3.472|
+|   171| <a href="https://twitter.com/msanchezMIA">@msanchezMIA</a>           |   3.472|
+|   172| <a href="https://twitter.com/LeilaHaddou">@LeilaHaddou</a>           |   3.440|
 |   173| <a href="https://twitter.com/gebeloffnyt">@gebeloffnyt</a>           |   3.440|
 |   174| <a href="https://twitter.com/matt_kiefer">@matt\_kiefer</a>          |   3.440|
 |   175| <a href="https://twitter.com/rtburg">@rtburg</a>                     |   3.440|
