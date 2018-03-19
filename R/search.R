@@ -22,20 +22,13 @@ rt <- search_tweets(
 if (file.exists(file.path("data", "search.rds"))) {
 
   ## bind rows (for tweets AND users data)
-  rt <- do_call_rbind(
-    list(rt, readRDS(file.path("data", "search.rds"))))
+  rt <- do.call("rbind", list(rt, readRDS(file.path("data", "search.rds"))))
 
   ## determine whether each observation has a unique status ID
-  kp <- !duplicated(rt$status_id)
-
-  ## only keep rows (observations) with unique status IDs
-  users <- users_data(rt)[kp, ]
+  kp <- !duplicated(rt$status_id) & !is.na(rt$status_id)
 
   ## the rows of users should correspond with the tweets
   rt <- rt[kp, ]
-
-  ## restore as users attribute
-  attr(rt, "users") <- users
 }
 
 ## save the data
